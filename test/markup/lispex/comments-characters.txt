@@ -1,0 +1,3 @@
+#| outer #| inner |# end |#
+(list #\" #\; "; not a comment")
+(define +5 7)

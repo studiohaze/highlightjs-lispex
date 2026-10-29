@@ -1,0 +1,49 @@
+{
+  "name": "highlightjs-lispex",
+  "version": "0.1.0",
+  "description": "Lispex language grammar for Highlight.js",
+  "type": "module",
+  "main": "dist/lispex.cjs",
+  "module": "dist/lispex.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lispex.es.js",
+      "require": "./dist/lispex.cjs"
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "npm run build",
+    "test": "mocha",
+    "test-markup": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/studiohaze/highlightjs-lispex.git"
+  },
+  "keywords": [
+    "highlight.js",
+    "highlightjs",
+    "syntax"
+  ],
+  "author": "STUDIO HAZE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/studiohaze/highlightjs-lispex/issues"
+  },
+  "homepage": "https://github.com/studiohaze/highlightjs-lispex",
+  "peerDependencies": {
+    "highlight.js": "^11.11.0"
+  },
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "highlight.js": "^11.11.1",
+    "mocha": "^11.2.2",
+    "rollup": "^4.0.2",
+    "should": "^13.2.3"
+  }
+}

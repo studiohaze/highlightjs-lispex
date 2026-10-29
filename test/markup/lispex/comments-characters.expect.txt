@@ -1,0 +1,3 @@
+<span class="hljs-comment">#| outer <span class="hljs-comment">#| inner |#</span> end |#</span>
+(<span class="hljs-built_in">list</span> <span class="hljs-string">#\&quot;</span> <span class="hljs-string">#\;</span> <span class="hljs-string">&quot;; not a comment&quot;</span>)
+(<span class="hljs-keyword">define</span> +5 <span class="hljs-number">7</span>)
