@@ -12,8 +12,10 @@
     }
   },
   "files": [
-    "src",
-    "dist"
+    "src/",
+    "dist/",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "rollup -c",
@@ -26,16 +28,16 @@
     "url": "https://github.com/studiohaze/highlightjs-lispex.git"
   },
   "keywords": [
-    "highlight.js",
-    "highlightjs",
-    "syntax"
+    "syntax-highlighting",
+    "lispex",
+    "highlight.js"
   ],
   "author": "STUDIO HAZE",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/studiohaze/highlightjs-lispex/issues"
   },
-  "homepage": "https://github.com/studiohaze/highlightjs-lispex",
+  "homepage": "https://github.com/studiohaze/highlightjs-lispex#readme",
   "peerDependencies": {
     "highlight.js": "^11.11.0"
   },
