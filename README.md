@@ -31,7 +31,8 @@ The tests build the ESM, CommonJS and browser bundles and compare the highlighte
 
 ## Links
 
-- [Lispex](https://www.lispex.com/)
+- [Lispex documentation](https://www.lispex.com/en/docs)
+- [Lispex on npm](https://www.npmjs.com/package/lispex)
 - [Reader grammar](https://www.lispex.com/v1.21/en/docs/reference/reader-grammar)
 - [Exact numbers](https://www.lispex.com/v1.21/en/docs/manual/numbers)
 

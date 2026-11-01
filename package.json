@@ -1,6 +1,6 @@
 {
   "name": "highlightjs-lispex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lispex language grammar for Highlight.js",
   "type": "module",
   "main": "dist/lispex.cjs",
