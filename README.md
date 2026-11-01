@@ -1,48 +1,40 @@
-# Lispex grammar for Highlight.js
+# Lispex for Highlight.js
 
-A syntax-highlighting grammar for [Lispex](https://www.lispex.com/), developed by STUDIO HAZE.
+Syntax highlighting for [Lispex](https://www.lispex.com/), the Lisp from STUDIO HAZE. It uses the standard Highlight.js scopes, so every existing theme works.
 
-This package contains highlighting rules and public-language examples, not the
-language implementation. It uses standard Highlight.js scopes, so existing
-themes apply. This is syntax highlighting, not a language validator.
+## Install
 
-## Use from the repository
+```sh
+npm install highlight.js highlightjs-lispex
+```
 
-Install Highlight.js 11 and clone this grammar repository. The committed
-`dist/` files can be used directly; a published npm version is not required.
+## Use
 
 ```javascript
 import hljs from 'highlight.js/lib/core';
-import grammar from './dist/lispex.es.js';
+import lispex from 'highlightjs-lispex';
 
-hljs.registerLanguage('lispex', grammar);
-console.log(hljs.highlight(source, { language: 'lispex' }).value);
+hljs.registerLanguage('lispex', lispex);
+const html = hljs.highlight(source, { language: 'lispex' }).value;
 ```
 
-CommonJS exports the grammar from `dist/lispex.cjs`. The browser bundle
-`dist/lispex.js` registers itself on an already loaded global `hljs`.
-The extension alias is `lspx`.
+CommonJS works with `require('highlightjs-lispex')`. In a browser, load `dist/lispex.js` after Highlight.js and it registers itself on the global `hljs`. The alias `lspx` works too.
 
-## Develop and test
+## Develop
 
 ```sh
 npm ci
 npm test
 ```
 
-`npm test` builds ESM, CommonJS, and browser bundles, checks exact markup
-fixtures, and loads the complete CLI-verified example through all three formats.
-The test runner refuses to pass when it discovers no markup fixtures.
-Commit the generated `dist/` files when changing the grammar.
+The tests build the ESM, CommonJS and browser bundles and compare the highlighted markup with the fixtures. Commit the rebuilt `dist/` files with any grammar change.
 
-## Syntax references
+## Links
 
-- [Official language site](https://www.lispex.com/)
-- [Lexical rules](https://www.lispex.com/v1.21/en/docs/reference/reader-grammar)
-- [Reserved/forbidden forms](https://www.lispex.com/v1.21/en/docs/reference/reserved-and-forbidden)
+- [Lispex](https://www.lispex.com/)
+- [Reader grammar](https://www.lispex.com/v1.21/en/docs/reference/reader-grammar)
 - [Exact numbers](https://www.lispex.com/v1.21/en/docs/manual/numbers)
-- The complete example was run with official Lispex 1.21.1.
 
 ## License
 
-MIT; see [LICENSE](LICENSE). The upstream grammar-template layout is also MIT.
+MIT
