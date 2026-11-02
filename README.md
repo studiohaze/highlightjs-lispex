@@ -1,6 +1,6 @@
 # Lispex for Highlight.js
 
-Syntax highlighting for [Lispex](https://www.lispex.com/), the Lisp from STUDIO HAZE. It uses the standard Highlight.js scopes, so every existing theme works.
+Syntax highlighting for [Lispex](https://www.lispex.com/), a safe language for business rules. It uses the standard Highlight.js scopes, so every existing theme works.
 
 ## Install
 
